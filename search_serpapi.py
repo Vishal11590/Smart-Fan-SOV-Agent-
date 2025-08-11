@@ -23,3 +23,9 @@ def serp_search(query, serpapi_key, num=30):
             "link": item.get("link")
         })
     return results
+if __name__ == "__main__":
+    from config import SERPAPI_KEY
+    results = serp_search("smart fan", SERPAPI_KEY, num=5)
+    for r in results:
+        print(r)
+
