@@ -1,3 +1,20 @@
+"""
+main.py
+--------
+This is the script for the Share-of-Voice (SoV) AI Agent.
+
+What it does:
+1. Reads keywords and brand list from config.py
+2. Fetches search results from Google (via SerpAPI) and YouTube (via YouTube Data API)
+3. Runs brand detection, engagement scoring, and sentiment analysis
+4. Calculates Share of Voice percentages for each brand
+5. Saves the top results to results.csv and prints summary in console
+
+Run:
+    python main.py
+Output:
+    results.csv  - CSV file containing top N search results with brand mentions
+"""
 import config
 import pandas as pd
 from search_serpapi import serp_search
