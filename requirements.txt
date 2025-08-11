@@ -1,0 +1,9 @@
+google-api-python-client==2.70.0
+requests
+serpapi
+transformers
+torch
+pandas
+tqdm
+spacy
+streamlit
