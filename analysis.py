@@ -1,3 +1,21 @@
+"""
+analysis.py
+-----------
+Contains brand detection, engagement scoring, and sentiment analysis logic.
+
+Functions:
+    detect_brand(text, brands)
+        - Checks if any brand names appear in the text
+
+    compute_engagement(stats)
+        - Calculates engagement score using views, likes, comments
+
+    sentiment_score(text)
+        - Uses HuggingFace Transformers sentiment analysis pipeline
+
+    score_for_result(text, stats, brands, brand)
+        - Combines brand mention, engagement, and sentiment to produce a weighted score
+"""
 import math
 from transformers import pipeline
 import spacy
