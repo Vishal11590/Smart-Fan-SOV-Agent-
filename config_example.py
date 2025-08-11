@@ -15,9 +15,17 @@ Also configure:
 IMPORTANT: Never commit config.py with real keys to a public repo.
 """
 
-
+# Your SerpAPI key for Google search
 SERPAPI_KEY = "YOUR_SERPAPI_KEY"
+
+# Your YouTube Data API key
 YOUTUBE_API_KEY = "YOUR_YOUTUBE_API_KEY"
+
+# Number of top results to fetch for each keyword
 TOP_N = 30
-BRANDS = ["Atomberg", "Crompton", "Havells", "Orient", "Usha"]
-KEYWORDS = ["smart fan", "BLDC fan", "energy saving ceiling fan"]
+
+# List of brand names to track in search results
+BRANDS = ["Atomberg", "Havells", "Crompton", "Usha"]
+
+# Keywords to search
+KEYWORDS = ["smart fan", "energy saving fan"]
