@@ -1,3 +1,20 @@
+"""
+search_youtube.py
+-----------------
+Fetches YouTube search results and video statistics.
+
+Functions:
+    youtube_search(query, api_key, max_results=25)
+        - Searches YouTube videos for the given keyword
+        - Returns list of dicts with video metadata
+
+    get_video_stats(video_id, api_key)
+        - Retrieves view count, like count, and comment count for a video
+
+Dependencies:
+    - google-api-python-client (pip install google-api-python-client)
+    - YouTube Data API key required (store in config.py as YOUTUBE_API_KEY)
+"""
 from googleapiclient.discovery import build
 
 def youtube_search(query, api_key, max_results=25):
