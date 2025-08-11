@@ -1,3 +1,7 @@
+"""
+This module fetches Google search results for a given keyword.
+Output: List of dicts with title, snippet, and link.
+"""
 import os
 from serpapi import GoogleSearch
 
